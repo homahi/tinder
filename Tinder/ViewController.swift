@@ -71,14 +71,17 @@ class ViewController: UIViewController {
                     self.resetCard()
                     self.people[self.selectedCardCount].center = CGPoint(x: self.people[self.selectedCardCount].center.x - 250, y: self.people[self.selectedCardCount].center.y)
                 })
+                likeImageView.alpha = 0
+                selectedCardCount += 1
                 return
             } else if card.center.x > self.view.frame.width - 75 {
                 UIView.animate(withDuration: 0.2, animations: {
                     self.resetCard()
                     self.people[self.selectedCardCount].center = CGPoint(x: self.people[self.selectedCardCount].center.x + 250, y: self.people[self.selectedCardCount].center.y)
                 })
+                likeImageView.alpha = 0
+                selectedCardCount += 1
                 return
-                
             }
             
             // 元に戻る処理
