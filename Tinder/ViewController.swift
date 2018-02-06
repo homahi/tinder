@@ -39,9 +39,11 @@ class ViewController: UIViewController {
         if xFromCenter > 0 {
             likeImageView.image = #imageLiteral(resourceName: "good")
             likeImageView.alpha = 1
+            likeImageView.tintColor = UIColor.red
         } else if xFromCenter < 0 {
             likeImageView.image = #imageLiteral(resourceName: "bad")
             likeImageView.alpha = 1
+            likeImageView.tintColor = UIColor.blue
         }
 
         if sender.state == UIGestureRecognizerState.ended {
@@ -65,6 +67,7 @@ class ViewController: UIViewController {
                 card.center = self.centerOfCard
                 card.transform = .identity
             })
+            likeImageView.alpha = 0
         }
         
     }
