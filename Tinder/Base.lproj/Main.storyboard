@@ -161,16 +161,22 @@
                                     <outletCollection property="gestureRecognizers" destination="yxs-0Y-Tz4" appends="YES" id="htY-u0-yeP"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-LS-HaT">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-LS-HaT" userLabel="DisLike">
                                 <rect key="frame" x="33" y="433" width="69" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="cross"/>
+                                <connections>
+                                    <action selector="dislikeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nzW-XL-Mmw"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTe-us-ojr">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTe-us-ojr" userLabel="Like">
                                 <rect key="frame" x="225" y="440" width="66" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.08915241677869512" blue="0.11185458936424353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button" image="heart"/>
+                                <connections>
+                                    <action selector="likeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgZ-96-JmW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -184,7 +190,7 @@
                         <outlet property="person2" destination="zVs-Ml-5mr" id="lwe-FJ-HRQ"/>
                         <outlet property="person3" destination="SGU-AY-ZX0" id="rE7-0e-ipe"/>
                         <outlet property="person4" destination="upo-e9-xhe" id="t0O-HN-K99"/>
-                        <segue destination="5fq-AP-vLr" kind="push" identifier="PushList" id="OvV-xX-MHO"/>
+                        <segue destination="5fq-AP-vLr" kind="show" identifier="PushList" id="OvV-xX-MHO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
