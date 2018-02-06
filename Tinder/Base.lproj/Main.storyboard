@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jhC-DT-XYs" userLabel="basicCard">
@@ -30,7 +30,7 @@
                                 <color key="backgroundColor" red="0.15347090620579462" green="1" blue="0.11619985956249135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="u3U-Zd-gyD" appends="YES" id="WXq-om-ay8"/>
+                                    <outletCollection property="gestureRecognizers" destination="yxs-0Y-Tz4" appends="YES" id="htY-u0-yeP"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -42,9 +42,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="u3U-Zd-gyD">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="yxs-0Y-Tz4">
                     <connections>
-                        <action selector="swipeCard:" destination="BYZ-38-t0r" id="yB4-Bl-vDK"/>
+                        <action selector="swipeCard:" destination="BYZ-38-t0r" id="0I8-Ow-vx1"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
