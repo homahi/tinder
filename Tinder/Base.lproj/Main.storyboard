@@ -39,6 +39,7 @@
                     </view>
                     <connections>
                         <outlet property="basicCard" destination="jhC-DT-XYs" id="NfH-8v-HVJ"/>
+                        <outlet property="likeImageView" destination="254-YR-GcY" id="fKB-XB-tGr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

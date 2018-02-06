@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var likeImageView: UIImageView!
     @IBOutlet weak var basicCard: UIView!
     
     var centerOfCard: CGPoint!
@@ -35,6 +36,13 @@ class ViewController: UIViewController {
         let xFromCenter = card.center.x - view.center.x
         card.transform = CGAffineTransform(rotationAngle: xFromCenter / (view.frame.width / 2 ) * -0.785)
         
+        if xFromCenter > 0 {
+            likeImageView.image = #imageLiteral(resourceName: "good")
+            likeImageView.alpha = 1
+        } else if xFromCenter < 0 {
+            likeImageView.image = #imageLiteral(resourceName: "bad")
+            likeImageView.alpha = 1
+        }
 
         if sender.state == UIGestureRecognizerState.ended {
             
